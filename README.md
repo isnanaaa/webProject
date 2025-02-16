@@ -39,10 +39,10 @@ npm run dev     # Jika menggunakan Nodemon untuk auto-restart
 5. Nodemon (Opsional) → Auto-restart server 6. saat ada perubahan kode
 
 ## 📌 Fitur Utama
-✅ CRUD anggota konsulat (Tambah, Edit, Hapus, Lihat)
-✅ Manajemen data perpulangan mahasiswi
-✅ API berbasis Express.js
-✅ Koneksi database MongoDB dengan Mongoose
-✅ Autentikasi JWT untuk keamanan data
+- ✅ CRUD anggota konsulat (Tambah, Edit, Hapus, Lihat)
+- ✅ Manajemen data perpulangan mahasiswi
+- ✅ API berbasis Express.js
+- ✅ Koneksi database MongoDB dengan Mongoose
+- ✅ Autentikasi JWT untuk keamanan data
 
 
