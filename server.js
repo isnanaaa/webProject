@@ -8,7 +8,7 @@ const GitHubStrategy = require("passport-github2").Strategy;
 const cors = require("cors");
 require("dotenv").config();
 require("./db");
-require("./passport");
+// require("./passport");
 
 const app = express();
 app.use(express.json());
