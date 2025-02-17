@@ -15,28 +15,57 @@ BACKEND-PERPULANGAN/
 │── server.js          # File utama backend (Express.js)
 │── README.md          # Dokumentasi proyek
 ```
-## 🚀 Instalasi & Menjalankan Proyek
-### 1️⃣ Install Dependensi
-npm install
-### 2️⃣ Konfigurasi Environment
-Buat file .env di root folder, lalu tambahkan konfigurasi berikut:
-``` sh
-MONGO_URI=your-mongodb-connection-string
-PORT=5000
-```
-### 3️⃣ Jalankan Server
-```sh
-node server.js  # Menjalankan server secara normal
-npm run dev     # Jika menggunakan Nodemon untuk auto-restart
-```
+
+## 🎯 Fitur Utama
+🔹 Pendaftaran Anggota Konsulat: Mahasiswi dapat mendaftar sebagai anggota konsulat.
+🔹 CRUD Data Konsulat: Admin dapat menambah, mengedit, dan menghapus data konsulat.
+🔹 Manajemen Pengumuman: Setiap konsulat dapat mengunggah dan mengelola pengumuman.
+🔹 Halaman Beranda: Berisi banner, dan pengumuman persyaratan pulang dll.
+🔹 Halaman Join: Fitur join konsulat, daftar anggota.
+🔹 Halaman Our Team: Berisi para pengembang website .
+🔹 Keamanan Data: Data pengguna dienkripsi untuk memastikan keamanan.
+🔹 Autentikasi: Login menggunakan OAuth2 untuk keamanan tambahan.
 
 ## 🛠️ Teknologi yang Digunakan
+1. HTML, CSS (Responsif) JavaScript (ES6+) → FrontEnd
+2. Node.js + Express.js → Backend API
+3. MongoDB + Mongoose → Database
+4. JWT (JSON Web Token) → Autentikasi
+5. Dotenv → Konfigurasi variabel lingkungan
+6. Nodemon (Opsional) → Auto-restart server 6. saat ada perubahan kode
 
-1. Node.js + Express.js → Backend API
-2. MongoDB + Mongoose → Database
-3. JWT (JSON Web Token) → Autentikasi
-4. Dotenv → Konfigurasi variabel lingkungan
-5. Nodemon (Opsional) → Auto-restart server 6. saat ada perubahan kode
+## 🚀 Instalasi & Penggunaan
+### 1️⃣ Clone Repository
+```sh
+ git clone https://github.com/username/repository.git
+ cd repository
+```
+### 2️⃣ Instalasi Depedensi
+``` sh
+npm install
+```
+### 3️⃣ Konfigurasi Lingkungan
+Buat file .env dan tambahkan konfigurasi berikut 
+```sh
+ MONGO_URI=your_mongodb_connection_string
+ OAUTH_CLIENT_ID=your_oauth_client_id
+ OAUTH_CLIENT_SECRET=your_oauth_client_secret
+ SESSION_SECRET=your_secret_key
+```
+### 4️⃣ Menjalankan Sever
+```sh
+npm start
+```
+atau
+```sh
+node server.js
+```
+## 📌 API Endpoints
+ - GET = ```sh /api/konsulat ``` - Mendapatkan daftar konsulat
+ - POST = ```sh /api/konsulat ``` - Menambah konsulat baru
+ - PUT = ```sh /api/konsulat/:id ``` - Memperbarui informasi konsulat
+ - DELETE = ```sh /api/konsulat/:id ``` - Menghapus konsulat
+ - POST = ```sh /api/auth/login ``` - Login menggunakan OAuth2
 
 ## 📌 Fitur Utama
 - ✅ CRUD anggota konsulat (Tambah, Edit, Hapus, Lihat)
