@@ -74,4 +74,10 @@ node server.js
 - ✅ Koneksi database MongoDB dengan Mongoose
 - ✅ Autentikasi JWT untuk keamanan data
 
+### Anggota Kelompok
+- 👩‍💻 Jilan Haniyah / 432022618022
+- 👩‍💻 Ayu Caesar / 432022618008
+- 👩‍💻 Isna Nurul / 432022618021
+- 👩‍💻 Nur Hasanah / 432022618052
+
 
